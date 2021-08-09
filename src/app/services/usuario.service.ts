@@ -28,4 +28,9 @@ export class UsuarioService {
   public eliminar(id: number): Observable<void> {
     return this.http.delete<void>(`${this.baseEndPoint}/${id}`);
   }
+
+  public loginVerification(email : string, password : string): Observable<void>{
+    return this.http.get<void>(`${this.baseEndPoint}/find/${email}-${password}`);
+  }
+
 }
