@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormCreateUserComponent implements OnInit {
 
+  public procesarClick(){
+    
+  }
+
   constructor() { }
 
   ngOnInit(): void {
